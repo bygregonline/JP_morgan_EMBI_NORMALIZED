@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Working server:{{name}}}</title>
+   <link rel="shortcut icon" href="static/img/{{favicon}}">
+</head>
+<style>
+table {
+    border-collapse: collapse;
+    box-shadow:22px 10px 32px #29292d;
+    margin-bottom:40px;
+    margin-left: 20px;
+    border-radius:16px;
+    border: 0px solid black;
+
+
+
+}
+
+th, td {
+    text-align: left;
+    padding: 33px;
+
+
+}
+
+tr:nth-child(even) {background-color: #f2f2f2; border-bottom:1px solid black;border-top:1px solid black}
+</style>
+<body>
+<h1> {{name}}</h1>
+
+<img  height="52px" width="52px" src="static/img/logo.png" style="display: block;margin-left:30px;margin-right: auto; margin-top:30px; margin-bottom:30px;">
+<br>
+Now you are running the pyramid web server on port {{port}}
+<ul>
+  <li > Pyramid</li>
+  <ul>
+  <li>Version:<font color="#999fff"> {{pyramid}}</font> </li>
+  </ul>
+  <li>Numpy
+    <ul>
+    <li>Version:<font color="#999fff"> {{numpy}} </font></li>
+    </ul>
+
+  <li>Pandas</li>
+  <ul>
+  <li>Version:<font color="#999fff"> {{pandas}} </font></li>
+  </ul>
+
+  <li>Matplotlib</li>
+<ul>
+<li>Version:<font color="#999fff"> {{matplotlib}} </font></li>
+</ul>
+</li>
+<li>openpyxl</li>
+<ul>
+<li>Version:<font color="#999fff"> {{openpyxl}} </font></li>
+</ul>
+<li>setuptools</li>
+<ul>
+<li>Version:<font color="#999fff"> {{setuptools}} </font></li>
+</ul>
+<li>py-common-fetch</li>
+<ul>
+<li>Version:<font color="#999fff"> {{py_common_fetch}} </font></li>
+</ul>
+<li>argparse</li>
+<ul>
+<li>Version:<font color="#999fff"> {{argparse}} </font></li>
+</ul>
+<li>pypng</li>
+<ul>
+<li>Version:<font color="#999fff"> {{pypng}} </font></li>
+</ul>
+
+</ul>
+<br>
+<br>
+
+<h1> Available Web services</h1>
+<br>
+<br>
+
+<table style="width: 800px;" >
+
+<tr>
+<td width="180px"><b>dataset</b></td>
+<td width="300px">format= html| json| xml| serialized| csv | excel</td>
+<td width="300px"><a href="http://{{host}}:8080/app/dataset?format=html">/app/dataset?</a></td>
+</tr>
+<tr>
+<td><b>normalized</b></td>
+<td>format= html| json| xml| serialized| csv | excel<br>
+    country= <font size="1.2"> MEXICO | LATINO | REP_DOM | BRAZIL | COLOMBIA | ECUADOR | ARGENTINA | MEXICO | PERU | PANAMA | VENEZUELA | URUGUAY | CHILE | EL_SALVADOR </td>
+<td width="300px"><a href="http://{{host}}:8080/app/normalized?country=MEXICO&format=html">/app/normalized?</a></td>
+</tr>
+<tr>
+<td><b>rawchart</b></td>
+<td>format = png | jpg<br>
+     dpi=20 to 300 <br>
+     country= <font size="1.2"> MEXICO | LATINO | REP_DOM | BRAZIL | COLOMBIA | ECUADOR | ARGENTINA | MEXICO | PERU | PANAMA | VENEZUELA | URUGUAY | CHILE | EL_SALVADOR </td>
+
+</td>
+<td width="300px"><a href="http://{{host}}:8080/app/rawchart?country=VENEZUELA&dpi=200&format=png">/app/rawchart?</a></td>
+</tr>
+
+<tr>
+<td><b>correlation charts</b></td>
+<td>scale=2 to 11<br>
+
+</td>
+<td width="300px"><a href="http://{{host}}:8080/app/correlationchart?dpi=240&format=png&annot=true">/app/correlationchart?</a></td>
+</tr>
+<tr>
+<td><b>correlation dataset</b></td>
+<td>format= html| json| xml| serialized| csv | excel<br>
+
+</td>
+<td width="300px"><a href="http://{{host}}:8080/app/correlationdata?format=html">/app/correlationdata?</a></td>
+</tr>
+
+<tr>
+<td><b>normalized charts</b></td>
+<td>
+  dpi=20 to 300 <br>
+  country= <font size="1.2"> MEXICO | LATINO | REP_DOM | BRAZIL | COLOMBIA | ECUADOR | ARGENTINA | MEXICO | PERU | PANAMA | VENEZUELA | URUGUAY | CHILE | EL_SALVADOR </td>
+
+
+</td>
+<td width="300px"><a href="http://{{host}}:8080/app/normalizedchart?country=MEXICO&dpi=100">/app/normalizedchart?</a></td>
+</tr>
+
+
+</table>
+
+
+
+
+
+
+
+</body>
+</html>

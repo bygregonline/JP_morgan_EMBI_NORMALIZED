@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Normalized data for  {{country}}</title>
+   <link rel="shortcut icon" href="static/img/logo.png">
+</head>
+<style>
+table {
+    border-collapse: collapse;
+    box-shadow:22px 10px 32px #29292d;
+    margin-bottom:40px;
+    margin-left: 20px;
+    border-radius:16px;
+    border: 0px solid black;
+
+
+
+}
+
+th, td {
+    text-align: left;
+    padding: 1px;
+
+
+}
+tr:nth-child(even) {background-color: #f2f2f2; border-bottom:1px solid black;border-top:1px solid black}
+
+</style>
+<body>
+<h1> Normalized data for  {{country}}</h1>
+
+
+<br>
+
+<table style="width:400px;height:180px;" >
+  <tr>
+    <td style="width:170px;" >Raw data mean:</td><td style="width:200px;" ><b>{{mean}}</b></td>
+  </tr>
+  <tr>
+    <td>Raw data variance:</td><td><b>{{variance}}</b></td>
+  </tr>
+
+    <tr>
+      <td>Normalized data mean:</td><td><b>{{normal_mean}}</b></td>
+    </tr>
+    <tr>
+      <td>Normalized data variance:</td><td><b>{{normal_variance}}</b></td>
+    </tr>
+</table>
+
+
+
+  <p><b>Raw data vs Normalized nada</b></p>
+   <img src="data:image/png;base64, {{both_images}}" alt="" style="box-shadow:22px 10px 32px #29292d; width:900px; height: 500px; margin-left:18px; margin-bottom:60px;   border-radius: 19px 19px 19px 19px" />
+
+
+<br>
+<br>
+
+<p><b>Historgram</b></p>
+ <img src="data:image/png;base64, {{histograms_images}}" alt="" style="box-shadow:22px 10px 32px #29292d; width:900px; height: 500px; margin-left:18px; margin-bottom:60px;   border-radius: 19px 19px 19px 19px" />
