@@ -72,6 +72,6 @@ TODO FIX this documentation
 
 \**If something goes wrong. A very friendly and useful web page will be displayed. \*\*
 
-![Image](https://raw.githubusercontent.com/bygregonline/JP_morgan_EMBI_NORMALIZED/master/images/image4.png)
+![error page](https://raw.githubusercontent.com/bygregonline/JP_morgan_EMBI_NORMALIZED/master/images/error.png)
 
-\**vous pouvez faire ce que vous voulez de ce truc. Si on se rencontre un jour et que vous pensez que ce truc vaut le coup, vous pouvez me payer une bière en retour. Your friend Greg flores \*\*
+\**vous pouvez faire ce que vous voulez de ce truc. Si on se rencontre un jour et que vous pensez que ce truc vaut le coup, vous pouvez me payer une bière en retour. Your friend Greg flores *\*
